@@ -7,6 +7,9 @@ public class Photo {
     private int userId; // идентификатор пользователя, загрузившего фото (если фотография размещена в сообществе). Для фотографий, размещенных от имени сообщества, user_id = 100.
     private String text; // текст описания фотографии.
     private int date; // дата добавления в формате Unixtime.
+    private int width; // ширина оригинала фотографии в пикселах.
+    private int height; // высота оригинала фотографии в пикселах.
+
 
     public int getId() {
         return id;
@@ -71,8 +74,5 @@ public class Photo {
     public void setHeight(int height) {
         this.height = height;
     }
-
-    private int width; // ширина оригинала фотографии в пикселах.
-    private int height; // высота оригинала фотографии в пикселах.
 
 }

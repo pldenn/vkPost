@@ -1,6 +1,12 @@
 package ru.netology.domain;
 
 public class CommentsInfo {
+    private int count; // число комментариев
+    private int[] canPost;  // информация о том, может ли текущий пользователь комментировать запись (1 — может, 0 — не может);
+    private int[] groupCanPost; // информация о том, могут ли сообщества комментировать запись;
+    private boolean canClose; // может ли текущий пользователь закрыть комментарии к записи;
+    private boolean canOpen; // может ли текущий пользователь открыть комментарии к записи.
+
     public int getCount() {
         return count;
     }
@@ -40,11 +46,5 @@ public class CommentsInfo {
     public void setCanOpen(boolean canOpen) {
         this.canOpen = canOpen;
     }
-
-    private int count; // число комментариев
-    private int[] canPost ={0,1};  // информация о том, может ли текущий пользователь комментировать запись (1 — может, 0 — не может);
-    private int[] groupCanPost ={0,1}; //информация о том, могут ли сообщества комментировать запись;
-    private boolean canClose; // может ли текущий пользователь закрыть комментарии к записи;
-    private boolean canOpen; //может ли текущий пользователь открыть комментарии к записи.
 
 }
